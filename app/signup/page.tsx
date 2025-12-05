@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { FiMail, FiLock, FiUser, FiBuilding } from 'react-icons/fi';
+import { FiMail, FiLock, FiUser, FiBriefcase } from 'react-icons/fi';
 
 export default function Signup() {
   const router = useRouter();
@@ -107,7 +107,7 @@ export default function Signup() {
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">Organization (Optional)</label>
                 <div className="relative">
-                  <FiBuilding className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+                  <FiBriefcase className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
                   <input
                     type="text"
                     value={formData.organization}
